@@ -11,42 +11,38 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/ll1"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:padding="5dp"
             android:layout_weight="2.5">
 
             <TextView
                 android:id="@+id/tvHistory"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="left|top"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:textSize="15sp"
                 />
             <TextView
                 android:id="@+id/tvResult"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="right|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
                 android:text="0"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:textSize="40sp"
                 />
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <LinearLayout
-            android:id="@+id/ll2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="5dp"
             android:layout_weight="1">
 
             <LinearLayout
@@ -59,6 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/colorButtonNormal"
                     android:onClick="btnClick"
                     android:text="CE"
                     />
@@ -66,6 +63,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/colorButtonNormal"
                     android:onClick="btnClick"
                     android:text="C"
                     />
@@ -73,6 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/colorButtonNormal"
                     android:onClick="btnClick"
                     android:text="Back"
                     />
@@ -80,6 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/colorButtonNormal"
                     android:onClick="btnClick"
                     android:text="÷"
                     />
@@ -94,13 +94,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
                     android:onClick="btnClick"
-                    android:text="7"
-                    />
+                    android:text="7" />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
                     android:onClick="btnClick"
                     android:text="8"
                     />
@@ -108,6 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
                     android:onClick="btnClick"
                     android:text="9"
                     />
@@ -115,6 +117,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/colorButtonNormal"
                     android:onClick="btnClick"
                     android:text="×"
                     />
@@ -129,6 +132,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
                     android:onClick="btnClick"
                     android:text="4"
                     />
@@ -136,6 +140,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
                     android:onClick="btnClick"
                     android:text="5"
                     />
@@ -143,6 +148,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
                     android:onClick="btnClick"
                     android:text="6"
                     />
@@ -150,6 +156,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/colorButtonNormal"
                     android:onClick="btnClick"
                     android:text="-"
                     />
@@ -164,6 +171,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
                     android:onClick="btnClick"
                     android:text="1" />
 
@@ -171,6 +179,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
                     android:onClick="btnClick"
                     android:text="2" />
 
@@ -178,6 +187,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
                     android:onClick="btnClick"
                     android:text="3" />
 
@@ -185,6 +195,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/colorButtonNormal"
                     android:onClick="btnClick"
                     android:text="+" />
             </LinearLayout>
@@ -198,6 +209,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/colorButtonNormal"
                     android:onClick="btnClick"
                     android:text="±"
                     />
@@ -205,6 +217,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
                     android:onClick="btnClick"
                     android:text="0"
                     />
@@ -212,6 +225,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/colorButtonNormal"
                     android:onClick="btnClick"
                     android:text="."
                     />
@@ -219,6 +233,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/colorButtonNormal"
                     android:onClick="btnClick"
                     android:text="="
                     />
